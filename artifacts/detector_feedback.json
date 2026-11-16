@@ -1,0 +1,12 @@
+{
+  "15m:shark": {
+    "trades": 1.0,
+    "win_rate": 0.0,
+    "avg_reward": -0.6967508938531803
+  },
+  "non_harmonic_neural_net:5m": {
+    "trades": 221.0,
+    "win_rate": 0.4434389140271493,
+    "avg_reward": 0.41878771593703434
+  }
+}

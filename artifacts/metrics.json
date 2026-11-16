@@ -1,0 +1,80 @@
+{
+  "symbol": "XAUUSD",
+  "market_rows": 99952,
+  "harmonic_signal_count": 29,
+  "neural_signal_count": 4713,
+  "event_count": 4740,
+  "train_event_count": 2465,
+  "test_event_count": 1284,
+  "state_feature_count": 106,
+  "train_cutoff": "2025-09-25 07:05:00",
+  "validation_cutoff": "2025-12-10 19:00:00",
+  "portfolio": {
+    "starting_balance": 100.0,
+    "base_risk_per_trade": 0.02,
+    "min_risk_per_trade": 0.005,
+    "max_risk_per_trade": 0.03
+  },
+  "hard_mask_actions": true,
+  "neural_training": {
+    "samples": 5824,
+    "label_distribution": {
+      "2": 1962,
+      "1": 2008,
+      "0": 1854
+    },
+    "avg_long_reward": 0.05581872537732124,
+    "avg_short_reward": 0.046375494450330734,
+    "final_loss": 1.3419348312460857
+  },
+  "rl_training": {
+    "final_loss": 2.2581260800361633,
+    "epochs": 3.0
+  },
+  "backtest": {
+    "events": 1165,
+    "executed_trades": 222,
+    "skip_count": 943,
+    "win_rate": 0.44144144144144143,
+    "avg_reward_r": 0.4137627672442856,
+    "total_reward_r": 91.85533432823141,
+    "profit_factor": 1.7425848590562771,
+    "starting_balance": 100.0,
+    "ending_balance": 638.3439243284107,
+    "total_pnl_amount": 538.3439243284106,
+    "return_pct": 5.383439243284107,
+    "max_drawdown_pct": 0.15177879633275856,
+    "masked_decisions": 41
+  },
+  "pattern_gallery": {
+    "enabled": true,
+    "output_dir": "/home/mscai2025_ayush/harmonic-trading-cloud/artifacts/pattern_gallery",
+    "manifest_file": "/home/mscai2025_ayush/harmonic-trading-cloud/artifacts/pattern_gallery/gallery_manifest.csv",
+    "class_members_file": "/home/mscai2025_ayush/harmonic-trading-cloud/artifacts/pattern_gallery/neural_class_members.csv",
+    "harmonic": {
+      "image_count": 29,
+      "classes": {
+        "15m/butterfly": 2,
+        "15m/shark": 2,
+        "1h/shark": 1,
+        "5m/bat": 4,
+        "5m/butterfly": 1,
+        "5m/crab": 1,
+        "5m/shark": 18
+      }
+    },
+    "neural": {
+      "image_count": 8,
+      "class_count": 4,
+      "classes": {
+        "long_pattern_01": 201,
+        "long_pattern_02": 285,
+        "short_pattern_01": 2027,
+        "short_pattern_02": 2200
+      }
+    },
+    "harmonic_images": 29,
+    "neural_images": 8,
+    "neural_classes": 4
+  }
+}
