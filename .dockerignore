@@ -1,0 +1,12 @@
+.git
+.github
+.venv
+**/__pycache__
+*.pyc
+*.log
+/data
+/tests
+/scripts
+/artifacts/pattern_gallery
+/sample_payload.json
+/drift_payload.json
